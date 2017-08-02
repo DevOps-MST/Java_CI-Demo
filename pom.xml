@@ -10,6 +10,25 @@
   <properties>
   <hibernate.version>4.0.1.Final</hibernate.version>
   </properties>
+   <scm>
+     <connection>scm:git:https://github.com/DevOps-MST/Java_CI-Demo.git</connection>
+     <url>scm:git:https://github.com/DevOps-MST/Java_CI-Demo.git</url>
+    <tag>MAVENWEBPROJECT-0.0.1</tag>
+  </scm>
+  
+   <distributionManagement>
+   <repository>
+      <id>releases</id>
+      <name>Releases</name>
+      <url>http://localhost:8081/nexus/content/repositories/releases/</url>
+   </repository>
+   <snapshotRepository>
+    <id>snapshots</id>
+    <name>Snapshots</name>
+    <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+	     </distributionManagement> 
+	     
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
